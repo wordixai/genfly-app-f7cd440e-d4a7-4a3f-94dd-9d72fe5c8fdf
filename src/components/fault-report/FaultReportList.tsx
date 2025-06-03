@@ -212,9 +212,11 @@ const FaultReportList = () => {
             <Download className="mr-2 h-4 w-4" />
             导出
           </Button>
-          <Button as={Link} to="/fault-reports/create">
-            <PlusCircle className="mr-2 h-4 w-4" />
-            创建故障报告
+          <Button asChild>
+            <Link to="/fault-reports/create">
+              <PlusCircle className="mr-2 h-4 w-4" />
+              创建故障报告
+            </Link>
           </Button>
         </div>
       </div>
@@ -449,10 +451,11 @@ const FaultReportList = () => {
                                   <Button 
                                     variant="ghost" 
                                     size="icon"
-                                    as={Link}
-                                    to={`/fault-reports/${report.id}`}
+                                    asChild
                                   >
-                                    <Search className="h-4 w-4" />
+                                    <Link to={`/fault-reports/${report.id}`}>
+                                      <Search className="h-4 w-4" />
+                                    </Link>
                                   </Button>
                                 </TooltipTrigger>
                                 <TooltipContent>查看</TooltipContent>
@@ -465,10 +468,11 @@ const FaultReportList = () => {
                                   <Button 
                                     variant="ghost" 
                                     size="icon"
-                                    as={Link}
-                                    to={`/fault-reports/${report.id}/edit`}
+                                    asChild
                                   >
-                                    <SlidersHorizontal className="h-4 w-4" />
+                                    <Link to={`/fault-reports/${report.id}/edit`}>
+                                      <SlidersHorizontal className="h-4 w-4" />
+                                    </Link>
                                   </Button>
                                 </TooltipTrigger>
                                 <TooltipContent>编辑</TooltipContent>
@@ -535,18 +539,20 @@ const FaultReportList = () => {
                               <Button 
                                 variant="ghost" 
                                 size="icon"
-                                as={Link}
-                                to={`/fault-reports/${report.id}`}
+                                asChild
                               >
-                                <Search className="h-4 w-4" />
+                                <Link to={`/fault-reports/${report.id}`}>
+                                  <Search className="h-4 w-4" />
+                                </Link>
                               </Button>
                               <Button 
                                 variant="ghost" 
                                 size="icon"
-                                as={Link}
-                                to={`/fault-reports/${report.id}/edit`}
+                                asChild
                               >
-                                <SlidersHorizontal className="h-4 w-4" />
+                                <Link to={`/fault-reports/${report.id}/edit`}>
+                                  <SlidersHorizontal className="h-4 w-4" />
+                                </Link>
                               </Button>
                             </div>
                           </TableCell>
@@ -609,18 +615,20 @@ const FaultReportList = () => {
                               <Button 
                                 variant="ghost" 
                                 size="icon"
-                                as={Link}
-                                to={`/fault-reports/${report.id}`}
+                                asChild
                               >
-                                <Search className="h-4 w-4" />
+                                <Link to={`/fault-reports/${report.id}`}>
+                                  <Search className="h-4 w-4" />
+                                </Link>
                               </Button>
                               <Button 
                                 variant="ghost" 
                                 size="icon"
-                                as={Link}
-                                to={`/fault-reports/${report.id}/edit`}
+                                asChild
                               >
-                                <SlidersHorizontal className="h-4 w-4" />
+                                <Link to={`/fault-reports/${report.id}/edit`}>
+                                  <SlidersHorizontal className="h-4 w-4" />
+                                </Link>
                               </Button>
                             </div>
                           </TableCell>
@@ -683,18 +691,20 @@ const FaultReportList = () => {
                               <Button 
                                 variant="ghost" 
                                 size="icon"
-                                as={Link}
-                                to={`/fault-reports/${report.id}`}
+                                asChild
                               >
-                                <Search className="h-4 w-4" />
+                                <Link to={`/fault-reports/${report.id}`}>
+                                  <Search className="h-4 w-4" />
+                                </Link>
                               </Button>
                               <Button 
                                 variant="ghost" 
                                 size="icon"
-                                as={Link}
-                                to={`/fault-reports/${report.id}/edit`}
+                                asChild
                               >
-                                <SlidersHorizontal className="h-4 w-4" />
+                                <Link to={`/fault-reports/${report.id}/edit`}>
+                                  <SlidersHorizontal className="h-4 w-4" />
+                                </Link>
                               </Button>
                             </div>
                           </TableCell>
